@@ -4,6 +4,48 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Plain Living Manual &mdash; The Old Methods That Keep a Household Off the Bill Cycle</title>
+<meta name="description" content="The Plain Living Manual by Jonas Lapp: 98 old household methods to cut your bills and live self-sufficiently. Illustrated ebook, 79 pages, $24 once, instant download.">
+<meta name="author" content="Jonas Lapp">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#241f16">
+<link rel="canonical" href="https://www.jonaslapp.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Plain Living Manual">
+<meta property="og:url" content="https://www.jonaslapp.com/">
+<meta property="og:title" content="The Plain Living Manual &mdash; The Old Methods That Keep a Household Off the Bill Cycle">
+<meta property="og:description" content="98 old household methods to cut your bills and live self-sufficiently. Illustrated ebook, 79 pages, $24 once, instant download.">
+<meta property="og:image" content="https://www.jonaslapp.com/cover.jpg">
+<meta property="og:image:width" content="700">
+<meta property="og:image:height" content="937">
+<meta property="og:image:alt" content="The Plain Living Manual by Jonas Lapp">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Plain Living Manual &mdash; The Old Methods That Keep a Household Off the Bill Cycle">
+<meta name="twitter:description" content="98 old household methods to cut your bills and live self-sufficiently. Illustrated ebook, 79 pages, $24 once, instant download.">
+<meta name="twitter:image" content="https://www.jonaslapp.com/cover.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "The Plain Living Manual",
+  "author": { "@type": "Person", "name": "Jonas Lapp" },
+  "bookFormat": "https://schema.org/EBook",
+  "numberOfPages": "79",
+  "url": "https://www.jonaslapp.com/",
+  "image": "https://www.jonaslapp.com/cover.jpg",
+  "description": "98 old household methods to cut your bills and live self-sufficiently.",
+  "offers": {
+    "@type": "Offer",
+    "price": "24",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.jonaslapp.com/"
+  }
+}
+</script>
 <style>
   :root {
     --bg: #241f16;
@@ -16,6 +58,9 @@
     --gold: #cba85f;
     --gold2: #d8b877;
     --rust: #c0623a;
+    /* lighter rust for small text: #c0623a only reaches 3.94:1 on --bg, below the 4.5:1
+       WCAG AA minimum for normal-size text. Large display type still uses --rust. */
+    --rust-text: #d0724a;
     --rust-btn: #a34a28;
     --rule: #4a4230;
     --line: #3a3323;
@@ -23,6 +68,8 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   /* images always keep their own aspect ratio, even with width/height attributes set */
   img { max-width: 100%; height: auto; }
+  /* <picture> is inline by default; block keeps it sizing like the plain <img> it replaced */
+  picture { display: block; }
   html { scroll-behavior: smooth; }
   body {
     font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
@@ -48,7 +95,7 @@
     flex-wrap: wrap;
     gap: 8px;
   }
-  .topbar .rust { color: var(--rust); }
+  .topbar .rust { color: var(--rust-text); }
   .topbar .gold { color: var(--gold); }
 
   .container { max-width: 1120px; margin: 0 auto; padding: 0 32px; }
@@ -70,7 +117,7 @@
   .eyebrow {
     display: flex; align-items: center; gap: 16px;
     font-size: 12px; letter-spacing: 3px; text-transform: uppercase;
-    color: var(--rust); margin-bottom: 28px;
+    color: var(--rust-text); margin-bottom: 28px;
   }
   .eyebrow .line { flex: 1; height: 1px; background: var(--rule); }
   .eyebrow .muted { color: var(--muted); }
@@ -112,7 +159,7 @@
   @media (max-width: 700px) { .sec-head { grid-template-columns: 1fr; } }
   .numeral { font-size: 60px; font-style: italic; color: var(--rust); font-family: Georgia, serif; line-height: 1; }
   .numeral.gold { color: var(--gold); }
-  .kicker { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--rust); margin-bottom: 14px; }
+  .kicker { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--rust-text); margin-bottom: 14px; }
   .kicker.gold { color: var(--gold); }
   h2 { font-size: 44px; line-height: 1.12; font-weight: normal; color: var(--cream); margin-bottom: 20px; }
   .sec-intro { font-size: 17px; color: var(--cream2); max-width: 640px; line-height: 1.7; }
@@ -128,7 +175,7 @@
   .price-line .big { font-size: 44px; color: var(--rust); font-style: italic; font-family: Georgia, serif; }
   .price-line .note { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
   .divider { height: 1px; background: var(--rule); margin: 28px 0; }
-  .whatget-h { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--rust); margin-bottom: 6px; }
+  .whatget-h { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--rust-text); margin-bottom: 6px; }
   .get-item { display: flex; justify-content: space-between; gap: 20px; padding: 16px 0; border-top: 1px solid var(--line); }
   .get-item:first-of-type { border-top: none; }
   .get-item .g-name { font-size: 15.5px; color: var(--cream); }
@@ -148,7 +195,7 @@
   .chapter-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 50px; }
   @media (max-width: 800px) { .chapter-wrap { grid-template-columns: 1fr; } }
   .chapter-card { border: 1px solid var(--rule); padding: 26px 28px; background: rgba(255,255,255,0.015); }
-  .ch-head { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--rust); margin-bottom: 12px; }
+  .ch-head { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--rust-text); margin-bottom: 12px; }
   .ch-headline { font-size: 18px; color: var(--cream); margin-bottom: 18px; }
   .ch-item { font-size: 14.5px; color: var(--cream2); padding: 7px 0; border-top: 1px solid var(--line); display: flex; gap: 14px; }
   .ch-num { color: var(--gold); font-size: 12px; min-width: 20px; }
@@ -170,7 +217,7 @@
   /* faq */
   .faq-item { border-top: 1px solid var(--rule); padding: 26px 0; }
   .faq-q { font-size: 20px; color: var(--cream); margin-bottom: 0; cursor: default; display: flex; justify-content: space-between; }
-  .faq-q .mk { color: var(--rust); }
+  .faq-q .mk { color: var(--rust-text); }
   .faq-a { font-size: 15.5px; color: var(--cream2); line-height: 1.75; margin-top: 16px; max-width: 780px; }
 
   /* last call */
@@ -186,7 +233,7 @@
   .foot-links { display: flex; gap: 24px; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; }
   .foot-links a { color: var(--muted); text-decoration: none; }
   .foot-links a:hover { color: var(--gold); }
-  .foot-fine { margin-top: 24px; font-size: 12px; color: #7a6f57; line-height: 1.7; max-width: 900px; }
+  .foot-fine { margin-top: 24px; font-size: 12px; color: #948970; line-height: 1.7; max-width: 900px; }
 </style>
 </head>
 <body>
@@ -221,7 +268,7 @@
         </div>
       </div>
       <div class="hero-portrait">
-        <img src="cover.jpg" width="700" height="937" fetchpriority="high" decoding="async" alt="The Plain Living Manual">
+        <picture><source type="image/webp" srcset="cover-560.webp 560w, cover.webp 700w" sizes="(max-width: 900px) 92vw, 480px"><img src="cover.jpg" width="700" height="937" fetchpriority="high" decoding="async" alt="The Plain Living Manual"></picture>
         <div class="hero-quote">
           <div class="q">Not for becoming Amish. For keeping more of what you earn.</div>
           <div class="a">Jonas Lapp</div>
@@ -248,7 +295,7 @@
       </div>
     </div>
     <div class="manual-grid">
-      <div class="cover"><img src="cover.jpg" width="700" height="937" loading="lazy" decoding="async" alt="The Plain Living Manual"></div>
+      <div class="cover"><picture><source type="image/webp" srcset="cover-560.webp 560w, cover.webp 700w" sizes="(max-width: 900px) 92vw, 420px"><img src="cover.jpg" width="700" height="937" loading="lazy" decoding="async" alt="The Plain Living Manual"></picture></div>
       <div>
         <div class="prod-kicker">Illustrated Ebook &middot; 79 Pages &middot; Second Edition</div>
         <div class="prod-h">The complete plain-living household manual.</div>
@@ -426,7 +473,7 @@
 <section id="about">
   <div class="container">
     <div class="about-grid">
-      <div><img src="portrait.jpg" width="700" height="875" loading="lazy" decoding="async" alt="Jonas Lapp"></div>
+      <div><picture><source type="image/webp" srcset="portrait-560.webp 560w, portrait.webp 700w" sizes="(max-width: 900px) 92vw, 420px"><img src="portrait.jpg" width="700" height="875" loading="lazy" decoding="async" alt="Jonas Lapp"></picture></div>
       <div>
         <div class="sec-head" style="grid-template-columns: 60px 1fr; margin-bottom: 8px;">
           <div class="numeral">V.</div>
@@ -471,7 +518,7 @@
       </div>
     </div>
     <div class="manual-grid">
-      <div class="cover"><img src="cover.jpg" width="700" height="937" loading="lazy" decoding="async" alt="The Plain Living Manual"></div>
+      <div class="cover"><picture><source type="image/webp" srcset="cover-560.webp 560w, cover.webp 700w" sizes="(max-width: 900px) 92vw, 420px"><img src="cover.jpg" width="700" height="937" loading="lazy" decoding="async" alt="The Plain Living Manual"></picture></div>
       <div>
         <div class="prod-kicker">Illustrated Ebook &middot; 79 Pages &middot; Instant Download</div>
         <div class="prod-h">The Plain Living Manual</div>
@@ -564,11 +611,11 @@
 </footer>
 
 <!-- Exit-intent popup -->
-<div id="exitPopup" style="display:none;position:fixed;inset:0;background:rgba(20,17,12,0.82);z-index:9999;align-items:center;justify-content:center;padding:24px;">
+<div id="exitPopup" role="dialog" aria-modal="true" aria-labelledby="exitPopupTitle" style="display:none;position:fixed;inset:0;background:rgba(20,17,12,0.82);z-index:9999;align-items:center;justify-content:center;padding:24px;">
   <div style="background:var(--bg3);border:1px solid var(--gold);max-width:460px;width:100%;padding:40px 36px;text-align:center;position:relative;">
-    <button id="exitClose" style="position:absolute;top:12px;right:16px;background:none;border:none;color:var(--muted);font-size:24px;cursor:pointer;line-height:1;">&times;</button>
+    <button id="exitClose" type="button" aria-label="Close" style="position:absolute;top:12px;right:16px;background:none;border:none;color:var(--muted);font-size:24px;cursor:pointer;line-height:1;">&times;</button>
     <div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;">Before you go</div>
-    <h3 style="font-size:28px;line-height:1.2;color:var(--cream);font-weight:normal;margin-bottom:18px;">44 of the 98 methods cost under $20 to try.</h3>
+    <h3 id="exitPopupTitle" style="font-size:28px;line-height:1.2;color:var(--cream);font-weight:normal;margin-bottom:18px;">44 of the 98 methods cost under $20 to try.</h3>
     <p style="font-size:15.5px;line-height:1.65;color:var(--cream2);margin-bottom:28px;">That's less than the book itself. Start with the cheapest fix that suits your house &mdash; and if it isn't for you, there's a 7-day refund.</p>
     <a href="https://plainlivingmanual.gumroad.com/l/JonasLapp" style="display:inline-block;background:var(--rust-btn);color:var(--cream);padding:16px 32px;font-size:13px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;font-weight:bold;border-radius:2px;">Get the Manual &middot; $24 &rarr;</a>
   </div>
@@ -580,8 +627,10 @@
   document.addEventListener('mouseout', function(e){
     if(!e.relatedTarget && e.clientY <= 0) show();
   });
-  document.getElementById('exitClose').addEventListener('click', function(){ p.style.display='none'; });
-  p.addEventListener('click', function(e){ if(e.target === p) p.style.display='none'; });
+  function hide(){ p.style.display='none'; }
+  document.getElementById('exitClose').addEventListener('click', hide);
+  p.addEventListener('click', function(e){ if(e.target === p) hide(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') hide(); });
 })();
 </script>
 <!-- Cloudflare Web Analytics -->
